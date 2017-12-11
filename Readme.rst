@@ -3,7 +3,7 @@ diamond-accounting
 
 Diamond-Accounting helps you manage your books.
 
-.. image:: https://img.shields.io/github/stars/USERNAME/diamond-accounting.svg?style=social&label=GitHub
+.. image:: https://img.shields.io/github/stars/iandennismiller/diamond-accounting.svg?style=social&label=GitHub
     :target: https://github.com/iandennismiller/diamond-accounting
 
 .. image:: https://img.shields.io/pypi/v/diamond-accounting.svg
@@ -13,11 +13,11 @@ Diamond-Accounting helps you manage your books.
     :target: http://diamond-accounting.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. image:: https://travis-ci.org/USERNAME/diamond-accounting.svg?branch=master
-    :target: https://travis-ci.org/USERNAME/diamond-accounting
+.. image:: https://travis-ci.org/iandennismiller/diamond-accounting.svg?branch=master
+    :target: https://travis-ci.org/iandennismiller/diamond-accounting
 
-.. image:: https://coveralls.io/repos/github/USERNAME/diamond-accounting/badge.svg?branch=master
-    :target: https://coveralls.io/github/USERNAME/diamond-accounting?branch=master
+.. image:: https://coveralls.io/repos/github/iandennismiller/diamond-accounting/badge.svg?branch=master
+    :target: https://coveralls.io/github/iandennismiller/diamond-accounting?branch=master
 
 Overview
 --------
