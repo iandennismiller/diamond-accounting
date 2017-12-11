@@ -9,3 +9,10 @@ script:
   - nosetests -w diamond_accounting -c etc/tests.cfg --with-coverage --cover-package=diamond_accounting
 after_success:
   - coveralls --rcfile=.coveragerc
+notifications:
+  webhooks:
+    urls:
+      - "https://scalar.vector.im/api/neb/services/hooks/dHJhdmlzLWNpLyU0MGlhbmRlbm5pc21pbGxlciUzQW1hdHJpeC5vcmcvJTIxVnF2T0dtUXlVZ2JmUlpaZ2FGJTNBbWF0cml4Lm9yZw"
+    on_success: change  # always|never|change
+    on_failure: always
+    on_start: never
