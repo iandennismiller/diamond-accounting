@@ -3,4 +3,4 @@
 SHELL=/bin/bash
 
 ui:
-    bin/regdel ledgers/main.ledger
+    regdel ledgers/main.ledger

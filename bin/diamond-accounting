@@ -16,10 +16,9 @@ def cli(ctx):
 
 
 @cli.command('scaffold', short_help='scaffold a folder with a skel.')
-@click.pass_context
-def scaffold(ctx):
+def scaffold():
     from diamond_accounting.__meta__ import __version__
-    print("Diamond-Patterns", __version__)
+    print("Diamond-Patterns {0}".format(__version__))
 
     skel = "accounting"
     filename = pkg_resources.resource_filename('diamond_accounting', 'skels')
@@ -41,12 +40,16 @@ def scaffold(ctx):
     # clean up after ourselves
     if os.path.isdir(".skel"):
         dir_util.remove_tree(".skel")
+    os.remove("products/.gitignore")
+    os.remove("statements/.gitignore")
+    os.remove("data/.gitignore")
+    os.remove(".mrbob.ini")
 
 
 @cli.command('version', short_help='show version')
 def version():
     from diamond_accounting.__meta__ import __version__
-    print(__version__)
+    print("Diamond-Patterns {0}".format(__version__))
 
 
 if __name__ == '__main__':

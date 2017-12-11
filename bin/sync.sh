@@ -63,8 +63,8 @@ function sync_from_config {
 if [[ -z $2 ]]; then
     echo "Error: configuration and datestamp are required."
     echo
-    echo "Usage: bin/sync.sh [CONFIG] [YYYY] [MM]"
-    echo "Example: bin/sync.sh etc/syncrc 2017 08"
+    echo "Usage: sync.sh [CONFIG] [YYYY] [MM]"
+    echo "Example: sync.sh etc/syncrc 2017 08"
     echo
     exit
 fi
