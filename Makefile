@@ -9,6 +9,7 @@ install:
 
 dev:
 	pip install -r .requirements-dev.txt
+	pip install https://github.com/Rudd-O/ledgerhelpers/archive/v0.2.3.tar.gz
 
 clean:
 	rm -rf build dist *.egg-info
