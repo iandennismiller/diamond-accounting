@@ -6,6 +6,7 @@ Usage
 .. toctree::
     :maxdepth: 1
 
+    process/diagrams
     process/updating-accounts
     process/bills
     process/clearing
