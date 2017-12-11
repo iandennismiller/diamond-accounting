@@ -1,0 +1,38 @@
+diamond-accounting
+==================
+
+Diamond-Accounting helps you manage your books.
+
+.. image:: https://img.shields.io/github/stars/USERNAME/diamond-accounting.svg?style=social&label=GitHub
+    :target: https://github.com/iandennismiller/diamond-accounting
+
+.. image:: https://img.shields.io/pypi/v/diamond-accounting.svg
+    :target: https://pypi.python.org/pypi/diamond-accounting
+
+.. image:: https://readthedocs.org/projects/diamond-accounting/badge/?version=latest
+    :target: http://diamond-accounting.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://travis-ci.org/USERNAME/diamond-accounting.svg?branch=master
+    :target: https://travis-ci.org/USERNAME/diamond-accounting
+
+.. image:: https://coveralls.io/repos/github/USERNAME/diamond-accounting/badge.svg?branch=master
+    :target: https://coveralls.io/github/USERNAME/diamond-accounting?branch=master
+
+Overview
+--------
+
+Installation
+^^^^^^^^^^^^
+
+Python pip
+~~~~~~~~~~
+
+::
+
+    pip install diamond-accounting
+
+Documentation
+^^^^^^^^^^^^^
+
+http://diamond-accounting.readthedocs.io

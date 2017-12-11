@@ -1,0 +1,2 @@
+mr.bob==0.1a9
+# flask-diamond==0.4.6

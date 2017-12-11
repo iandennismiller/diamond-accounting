@@ -1,0 +1,13 @@
+; diamond-accounting
+; opening.ledger
+; This file contains starting balances for accounts.
+; Assign opening balances right before you open your books.
+; In the example below, we are starting our books on 2000/01/01.
+; Thus, we set opening balances on 1999/12/31.
+
+1999/12/31 * Opening Balance
+    Equity:OpeningBalances
+    ; BANK_NAME 0123456789 "A memorable name for Account1"
+    Assets:Bank:Account1                          4000.00 CAD
+    ; BANK_NAME 0123456780 "A memorable name for Account2"
+    Assets:Bank:Account2                          2000.00 CAD

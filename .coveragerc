@@ -1,0 +1,6 @@
+[run]
+source = diamond_accounting
+[report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*

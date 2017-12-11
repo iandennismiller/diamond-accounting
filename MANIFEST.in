@@ -1,0 +1,2 @@
+graft diamond_accounting
+include *.cfg *.rst *.in *.txt

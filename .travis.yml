@@ -1,0 +1,11 @@
+language: python
+cache: pip
+python:
+  - 2.7
+  - 3.5
+install:
+  - make dev install
+script:
+  - nosetests -w diamond_accounting -c etc/tests.cfg --with-coverage --cover-package=diamond_accounting
+after_success:
+  - coveralls --rcfile=.coveragerc

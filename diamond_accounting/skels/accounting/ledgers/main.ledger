@@ -1,0 +1,7 @@
+; diamond-accounting
+; main.ledger
+; This file loads other ledger files.
+; It should contain no transactions.
+
+include budget.ledger
+include 1999/opening.ledger

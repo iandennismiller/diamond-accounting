@@ -1,0 +1,54 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# diamond-accounting (c) Ian Dennis Miller
+
+import click
+import pkg_resources
+import os
+import diamond_accounting
+from distutils import dir_util
+
+
+@click.group()
+@click.option('--skel', help='name of skel to apply.')
+@click.pass_context
+def cli(ctx, skel):
+    ctx.obj['skel'] = skel
+
+
+@cli.command('scaffold', short_help='scaffold a folder with a skel.')
+@click.pass_context
+def scaffold(ctx):
+    from diamond_accounting.__meta__ import __version__
+    print("Diamond-Patterns", __version__)
+
+    skel = "accounting"
+    filename = pkg_resources.resource_filename('diamond_accounting', 'skels')
+    pathname = os.path.dirname(os.path.abspath(diamond_accounting.__file__))
+
+    # if skel exists, remove it
+    if os.path.isdir(".skel"):
+        dir_util.remove_tree(".skel")
+
+    # create a local copy of the skel
+    full_path = os.path.join(pathname, filename, skel)
+    print(full_path)
+    dir_util.copy_tree(full_path, ".skel")
+
+    # invoke mr.bob with the local copy of the skel
+    cmd = "mrbob -w -O . .skel"
+    os.system(cmd)
+
+    # clean up after ourselves
+    if os.path.isdir(".skel"):
+        dir_util.remove_tree(".skel")
+
+
+@cli.command('version', short_help='show version')
+def version():
+    from diamond_accounting.__meta__ import __version__
+    print(__version__)
+
+
+if __name__ == '__main__':
+    cli(obj={})
