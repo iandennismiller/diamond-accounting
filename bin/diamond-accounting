@@ -10,10 +10,9 @@ from distutils import dir_util
 
 
 @click.group()
-@click.option('--skel', help='name of skel to apply.')
 @click.pass_context
-def cli(ctx, skel):
-    ctx.obj['skel'] = skel
+def cli(ctx):
+    pass
 
 
 @cli.command('scaffold', short_help='scaffold a folder with a skel.')

@@ -3,3 +3,4 @@ ledger-autosync==0.3.4
 ofxclient==2.0.2
 python-Levenshtein==0.12.0
 ledgerhelpers
+click==6.7
