@@ -25,12 +25,20 @@ Overview
 Installation
 ^^^^^^^^^^^^
 
-Python pip
-~~~~~~~~~~
+Install diamond-accounting with Python pip.
 
 ::
 
     pip install diamond-accounting
+
+Usage
+^^^^^
+
+Create an accounting file structure in the current folder.
+
+::
+
+    diamond-accounting scaffold
 
 Documentation
 ^^^^^^^^^^^^^
