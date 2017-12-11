@@ -46,7 +46,7 @@ setup(
     url=grep('__url__'),
     install_requires=read('requirements.txt'),
     dependency_links=[
-        'https://github.com/iandennismiller/ledgerhelpers/archive/0.2.4rc2-idm.tar.gz#egg=ledgerhelpers',
+        'https://github.com/iandennismiller/ledgerhelpers/archive/0.2.4rc2.tar.gz#egg=ledgerhelpers',
     ],
     license='MIT',
     zip_safe=False,
