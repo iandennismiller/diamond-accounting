@@ -1,3 +1,2 @@
 graft diamond_accounting
-graft lib
 include *.cfg *.rst *.in *.txt
