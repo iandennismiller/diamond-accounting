@@ -7,6 +7,10 @@ Usage
     :maxdepth: 1
 
     process/updating-accounts
+    process/bills
+    process/clearing
+    process/reading
+    process/reporting
 
 Reference
 ---------
