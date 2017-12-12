@@ -1,56 +1,68 @@
 Installation
 ============
 
-prerequisites
+Typical setup
 -------------
 
-Ensure python, virtualenv, and ledger are installed:
+Python 2.7 is required.
 
 ::
 
+    pip install diamond-accounting
+
+The Python 2.7 dependency comes from ledgerhelpers, which does not yet support Python 3.
+
+Python virtualenv
+-----------------
+
+You can optionally make a python virtualenv for accounting work.
+
+::
+
+    mkvirtualenv --system-site-packages accounting
+
+Pre-requisites
+--------------
+
+Ensure python, virtualenv, and ledger are installed.
+On OS X with homebrew, these can be installed with the following commands:
+
+::
+
+    brew install ledger --with-python
     brew install python --universal --framework
     brew install pyenv-virtualenv pyenv-virtualenvwrapper
-    brew install ledger --with-python
 
-Make a python virtualenv to contain our ledger work:
+`Diamond-Accounting` is not currently compatible with Windows.  Sorry.
 
-::
-
-    mkvirtualenv --system-site-packages ledger
-    pip install -r etc/requirements.txt
-
-clone
------
-
-::
-
-    git clone /Volumes/mpgtrust/ledger.git ~/ledger
-    cd ~/ledger
-
-configure
+Configure
 ---------
 
 Create and edit a configuration file:
 
 ::
 
-    cp etc/ledgerrc ~/.ledgerrc
+    ln -s etc/ledgerrc ~/.ledgerrc
 
-Ensure the file points to `ledgers/main.ldg`, which in my case looks like:
+Ensure ``etc/ledgerrc`` points to ``ledgers/main.ledger``.
+In my case, that looks like:
 
 ::
 
-    --file /Users/idm/Work/ledger/ledgers/main.ldg
+    --file ~/Work/accounting/ledgers/main.ledger
 
-installing meld
+Installing meld
 ---------------
 
-This is only relevant for sorting ledger files.
-Sorting is a sensitive process that changes ledger files and it is run infrequently.
+This is only relevant for sorting ledger files - and if you never do this, you'll be better off.
+Sorting is a sensitive process that changes ledger files and should only be run infrequently.
+
 Just install meld from GitHub.
+The point is to run ``meld`` on the command line and have it work.
+The following commands download Meld and install an alias within the virtualenv.
 
 ::
 
     wget https://github.com/yousseb/meld/releases/download/osx-9/meldmerge.dmg
     open meldmerge.dmg # install it here
-    ln -s /Applications/Meld.app/Contents/MacOS/Meld ~/.virtualenvs/ledger/bin/meld
+    ln -s /Applications/Meld.app/Contents/MacOS/Meld ~/.virtualenvs/accounting/bin/meld
