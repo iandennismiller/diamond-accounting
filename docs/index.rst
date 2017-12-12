@@ -1,24 +1,9 @@
 .. include:: ../Readme.rst
 
-Usage
------
-
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
-    process/diagrams
-    process/updating-accounts
-    process/bills
-    process/clearing
-    process/reading
-    process/reporting
-
-Reference
----------
-
-.. toctree::
-    :maxdepth: 1
-
+    process
+    usage
     installation
-    license
-    changelog
+    reference

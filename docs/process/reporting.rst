@@ -1,6 +1,8 @@
 Reporting
 =========
 
+.. image:: ../_static/diagrams/Reporting.png
+
 The monthly statement is a compilation of common financial statements, including balance, income/expense, and year-to-date graphs.
 Once the accounts have been imported and cleared, then it is time to create a monthly statement.
 
@@ -43,4 +45,4 @@ NB: multiple files can be uploaded at once.
 Next steps
 ----------
 
-[The reports are online so it is time to make regular use of them.](reading.md)
+Next read about :doc:`reading`.

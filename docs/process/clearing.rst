@@ -1,6 +1,8 @@
 Clearing Transactions
 =====================
 
+.. image:: ../_static/diagrams/Clearing.png
+
 Once transactions are imported, they must be reviewed for accuracy once before the "numbers" can be trusted.
 Importing has assured that the categories are roughly correct, but now we must verify that the dollar amounts have been imported correctly.
 The way to review transactions for accuracy is to compare the ending balance to a statement from the financial institution.
@@ -13,9 +15,11 @@ When we independently verify that our record of the transactions sums to the sam
 Overview
 --------
 
+There are just a few principles for clearing transactions.
+
 0. Sort transactions
-2. Clear All Transactions
-1. Verify Balances
+1. Clear All Transactions - Verify amounts
+2. Verify Balances
 
 Setup
 -----
@@ -97,4 +101,4 @@ The transaction was probably not cleared, but in case it was actually not entere
 Next steps
 ----------
 
-[With all transactions clear, it is time for reporting](reporting.md).
+Next read about :doc:`reporting`.
