@@ -30,6 +30,11 @@ Then, verify amounts against the original bank statements to ensure transactions
 
 .. image:: ../_static/diagrams/Process.png
 
+Categorize Transactions
+-----------------------
+
+.. image:: ../_static/diagrams/Categorization.png
+
 Reporting
 ---------
 
