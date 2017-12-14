@@ -733,7 +733,7 @@
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2017-12-14 00:51:55 +0000</string>
+	<string>2017-12-14 01:45:35 +0000</string>
 	<key>Modifier</key>
 	<string>Ian Miller</string>
 	<key>NotesVisible</key>
@@ -8531,12 +8531,14 @@ password}</string>
 					<dict>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\partightenfactor0
 
-\f0\fs20 \cf0 Verify Transaction Amounts}</string>
+\f0\fs20 \cf0 clear.sh\
+etc/syncrc\
+YYYY ACCT}</string>
 						<key>VerticalPad</key>
 						<real>0.0</real>
 					</dict>
@@ -11913,7 +11915,7 @@ YYYY MM}</string>
 					<key>Head</key>
 					<dict>
 						<key>ID</key>
-						<integer>19</integer>
+						<integer>562</integer>
 						<key>Info</key>
 						<integer>1</integer>
 					</dict>
@@ -11922,13 +11924,13 @@ YYYY MM}</string>
 					<key>OrthogonalBarAutomatic</key>
 					<true/>
 					<key>OrthogonalBarPoint</key>
-					<string>{170.97222218297637, 203}</string>
+					<string>{288.02777781702366, 203}</string>
 					<key>OrthogonalBarPosition</key>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{170.94444436595273, 253}</string>
-						<string>{171, 153}</string>
+						<string>{288.05555563404727, 253}</string>
+						<string>{288, 153}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -12018,7 +12020,7 @@ YYYY MM}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{130.44444436595273, 253}, {81, 35}}</string>
+					<string>{{247.55555563404727, 253}, {81, 35}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -17072,7 +17074,7 @@ statements/YYYY/MM}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>5</integer>
+		<integer>3</integer>
 		<key>Expanded_Canvases</key>
 		<array/>
 		<key>Frame</key>
@@ -17086,9 +17088,9 @@ statements/YYYY/MM}</string>
 		<key>TopSlabHeight</key>
 		<real>547</real>
 		<key>VisibleRegion</key>
-		<string>{{-9, -7}, {752.59257930132935, 591.11110067171342}}</string>
+		<string>{{-36, -28}, {806.34921245233761, 633.33333812693445}}</string>
 		<key>Zoom</key>
-		<real>1.3500000238418579</real>
+		<real>1.2599999904632568</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>

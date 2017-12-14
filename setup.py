@@ -27,6 +27,7 @@ setup(
         "bin/diamond-accounting",
         "bin/create-statement.sh",
         "bin/sync.sh",
+        "bin/clear.sh",
         "bin/regdel",
     ],
     long_description=read('Readme.rst'),
