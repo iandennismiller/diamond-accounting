@@ -28,6 +28,7 @@ setup(
         "bin/create-statement.sh",
         "bin/sync.sh",
         "bin/clear.sh",
+        "bin/sort.sh",
         "bin/regdel",
     ],
     long_description=read('Readme.rst'),
