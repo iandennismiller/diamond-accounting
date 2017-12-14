@@ -5,5 +5,5 @@
 
     process
     usage
-    installation
+    usage/installation
     reference

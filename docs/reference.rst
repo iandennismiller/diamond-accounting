@@ -4,7 +4,7 @@ Reference
 .. toctree::
     :maxdepth: 1
 
-    principles
+    reference/principles
     license
     changelog
 
