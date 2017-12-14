@@ -3,10 +3,13 @@ Clearing Transactions
 
 .. image:: ../_static/diagrams/Clearing.png
 
+Importing ensures the categories are roughly correct.
+Now we must verify that the dollar amounts have been imported correctly.
 Once transactions are imported, they must be reviewed for accuracy once before the "numbers" can be trusted.
-Importing has assured that the categories are roughly correct, but now we must verify that the dollar amounts have been imported correctly.
-The way to review transactions for accuracy is to compare the ending balance to a statement from the financial institution.
+
+The way to review transactions for accuracy is to compare the *cleared* ending balance to a statement from the financial institution.
 If the balances match, then all of the transactions have been successfully copied over to your ledger; you can now trust the numbers.
+Transactions must be marked as "cleared" one by one as they are compared between the ledger and the bank statements.
 This review process is called "clearing transactions."
 
 Each bank statement is like a checkpoint that serves to synchronize our ledger with the bank's ledger.
@@ -15,39 +18,30 @@ When we independently verify that our record of the transactions sums to the sam
 Overview
 --------
 
-There are just a few principles for clearing transactions.
+There are a few principles for clearing transactions.
 
-0. Sort transactions
-1. Clear All Transactions - Verify amounts
-2. Verify Balances
+1. open an account ledger and its corresponding bank statement
+2. use ``clear.sh`` to interactively review each uncleared transactions in the account
+3. confirm cleared ledger balance matches statement balance
 
 Setup
 -----
 
 First ensure you have the following materials in front of you:
 
-- bank statements
-- the ledger file that is being cleared
-- the transfers ledger, possibly
-
-Sort transactions
------------------
-
-The transactions are probably sorted already, so this step may not be necessary.
-In case transactions are not sorted, the `sorttrans-cli` tool can be used for the job:
-
-::
-
-    LEDGER_FILE=~/Work/ledger/ledgers/2017/BANK-0000.ledger sorttrans-cli
-
-If transactions need to be sorted regularly, then update the `Makefile` with a target so this can be repeated:
-
-::
-
-    make sort-0000
+- the ledger for the account being cleared, which is in ``/ledgers/YYYY/ACCT.ledger``
+- the transfers ledger ``/ledgers/YYYY/transfers.ledger``
+- bank statements in ``/statements/``
 
 Clear Transactions
 ------------------
+
+Interactively clear transactions on the command line.
+To clear account ``0123`` in the year 2017, use the following command:
+
+::
+
+    clear.sh etc/syncrc 2017 0123
 
 Ledger supports the ability to mark transactions as cleared by placing an asterisk before the memo.
 Cleared transactions can be reported apart from uncleared transactions, enabling reports to be generated with accurate numbers even while the ledgers could contain pending transactions.
@@ -57,8 +51,9 @@ If you instructed your bank to pay for a coffee, and if this coffee purchase tra
 When taking data directly from a bank's exported `QFX` file, it's unlikely that the amounts will differ from the statement.
 However, when manually entering certain transactions, such as when booking a payment or receivable before it cleared, there is opportunity for data entry errors.
 
-The `cleartrans-cli` tool can be used to make the clearing process operate much more quickly.
-This is a command for doing it:
+When you use ``clear.sh`` it relies upon a separate tool called cleartrans-cli.
+The ``cleartrans-cli`` tool makes the clearing process operate much more quickly.
+Although it is simpler to use ``clear.sh``, you can manually invoke this on the command line:
 
 ::
 
@@ -97,6 +92,22 @@ In case the difference looks "familiar," search for that amount and manually mar
 Transfers can become convoluted because they involve two accounts you control, meaning it is more likely for these transactions to be double-entered.
 In that case, the amount of the transfer will be equal to the amount of the difference between the bank statement and the ledger balance.
 The transaction was probably not cleared, but in case it was actually not entered at all, then manually enter the transfer now.
+
+Sort transactions
+-----------------
+
+The transactions are probably sorted already, so this step may not be necessary.
+In case transactions are not sorted, the `sorttrans-cli` tool can be used for the job:
+
+::
+
+    LEDGER_FILE=~/Work/accounting/ledgers/2017/BANK-0000.ledger sorttrans-cli
+
+If transactions need to be sorted regularly, then update the `Makefile` with a target so this can be repeated:
+
+::
+
+    make sort-0000
 
 Next steps
 ----------
