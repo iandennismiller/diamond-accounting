@@ -12,15 +12,6 @@ Python 2.7 is required.
 
 The Python 2.7 dependency comes from ledgerhelpers, which does not yet support Python 3.
 
-Python virtualenv
------------------
-
-You can optionally make a python virtualenv for accounting work.
-
-::
-
-    mkvirtualenv --system-site-packages accounting
-
 Pre-requisites
 --------------
 
@@ -34,6 +25,16 @@ On OS X with homebrew, these can be installed with the following commands:
     brew install pyenv-virtualenv pyenv-virtualenvwrapper
 
 `Diamond-Accounting` is not currently compatible with Windows.  Sorry.
+
+Python virtualenv
+-----------------
+
+You can optionally make a python virtualenv for accounting work.
+If you use a virtualenv, then you must include system packages to ensure ledger is available within your environment.
+
+::
+
+    mkvirtualenv -a . --system-site-packages accounting
 
 Configure
 ---------

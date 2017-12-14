@@ -14,7 +14,7 @@ function clear_account {
     ACCT_NAME=$(grep ${ACCT} ${SYNCRC} | cut -d ' ' -f 3)
     echo "ledger file: ${LEDGER_FILE}"
     echo "command: cleartrans-cli"
-    cleartrans-cli
+    LEDGER_FILE=$(ls `eval echo ${LEDGER_GLOB}`) cleartrans-cli
     echo "command: ledger --sort date bal --cleared ${ACCT_NAME}"
     ledger --sort date bal --cleared ${ACCT_NAME}
 }
