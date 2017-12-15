@@ -4,7 +4,12 @@ Read online for more information about about how to use this scaffold:
 
 http://diamond-accounting.readthedocs.io
 
-## Documentation
+## CMS
+
+- [Ledger statements are available online](http://YOUR.CMS/index.php)
+- [Upload statement PDFs](http://YOUR.CMS/administrator/index.php?option=com_media&folder=statements)
+
+## Process
 
 - [Setup](http://diamond-accounting.readthedocs.io/en/latest/process/setup.html)
 - [Download](http://diamond-accounting.readthedocs.io/en/latest/process/downloading.html)

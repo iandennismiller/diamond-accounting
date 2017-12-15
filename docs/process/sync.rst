@@ -8,11 +8,11 @@ This corresponds to **step 4.2** in the diagram.
 
 After downloading, transactions need to be synced to `ledgers/inbox.ledger` according to the configuration specified by [etc/syncrc](../etc/syncrc).
 The sync process expects to find `.QFX` files for import in within the ledger project itself, inside the `data/` folder.
-To perform the sync, use `bin/sync.sh`, substituting the year and month as appropriate:
+To perform the sync, use `sync.sh`, substituting the year and month as appropriate:
 
 ::
 
-    bin/sync.sh etc/syncrc YYYY MM
+    sync.sh etc/syncrc YYYY MM
 
 As accounts are synced to the inbox, `sync.sh` adds a comment to the file to provide notice that a new account is being synced.
 Watch for these comments during import so you know when to switch ledger files.
