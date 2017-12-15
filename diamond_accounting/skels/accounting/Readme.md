@@ -6,12 +6,12 @@ http://diamond-accounting.readthedocs.io
 
 ## Documentation
 
-- [Updating](http://diamond-accounting.readthedocs.io/en/latest/process/updating-accounts.html)
+- [Setup](http://diamond-accounting.readthedocs.io/en/latest/process/setup.html)
+- [Download](http://diamond-accounting.readthedocs.io/en/latest/process/downloading.html)
+- [Sync](http://diamond-accounting.readthedocs.io/en/latest/process/sync.html)
+- [Categorize](http://diamond-accounting.readthedocs.io/en/latest/process/categorizing.html)
 - [Clearing](http://diamond-accounting.readthedocs.io/en/latest/process/clearing.html)
 - [Reporting](http://diamond-accounting.readthedocs.io/en/latest/process/reporting.html)
-- [Reading monthly statements](http://diamond-accounting.readthedocs.io/en/latest/process/reading.html)
-- [Installation](http://diamond-accounting.readthedocs.io/en/latest/installation.html)
-- [Bills](http://diamond-accounting.readthedocs.io/en/latest/process/bills.html)
 
 ## References
 

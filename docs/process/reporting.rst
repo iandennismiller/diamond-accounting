@@ -21,7 +21,7 @@ For example, to create a statement for January 2017:
 
     create-statement.sh 2017 01 "Fancy Pants"
 
-The result will be placed into `/products/2017/2017-01.pdf`.
+The result will be placed into ``/products/2017/2017-01.pdf``.
 
 Uploading
 ---------
@@ -29,8 +29,8 @@ Uploading
 Statements should be archived in a CMS for easier use.
 If you use Joomla for your CMS, then there are two URLs to know:
 
-- [Administrator Media Manager](http://LOCALHOST/administrator/index.php?option=com_media&folder=statements)
-- [Accounting page on CMS](http://LOCALHOST/index.php/accounting)
+- http://YOUR.CMS/administrator/index.php?option=com_media&folder=statements
+- http://YOUR.CMS/index.php/accounting
 
 To add a statement, first upload the PDF via the Media manager.
 Once the PDF has been saved to the CMS server, then edit the Accounting page to include a link to the PDF.

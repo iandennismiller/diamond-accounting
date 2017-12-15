@@ -70,11 +70,15 @@ Uncleared transactions will remain in the ledger until next month when they can 
 Verify Balances
 ---------------
 
+When ``clear.sh`` is done running, it will display a balance.
+This balance should match your statement.
+If it does, then congratulations: your ledger is probably accurate!
+
 After an entire bank statement's worth of transactions have been cleared, it is time to compare the bottom line.
 Some statements - in particular, credit cards - like to hide the bottom line or confuse it with other sub-totals.
 There is only one bottom line that matters - and it **must** match your ledger's bottom line.
 
-With the statement still open, see whether the balance of all cleared transactions matches:
+You can also manually check the balance of all cleared transactions matches:
 
 ::
 

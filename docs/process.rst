@@ -1,5 +1,5 @@
-Monthly Updates
-===============
+Bookkeeping
+===========
 
 .. toctree::
     :maxdepth: 1
