@@ -1,4 +1,4 @@
-diamond-accounting
+Diamond-Accounting
 ==================
 
 Diamond-Accounting helps you manage your books.
@@ -13,11 +13,11 @@ Diamond-Accounting helps you manage your books.
     :target: http://diamond-accounting.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. image:: https://travis-ci.org/iandennismiller/diamond-accounting.svg?branch=master
-    :target: https://travis-ci.org/iandennismiller/diamond-accounting
+.. .. image:: https://travis-ci.org/iandennismiller/diamond-accounting.svg?branch=master
+..     :target: https://travis-ci.org/iandennismiller/diamond-accounting
 
-.. image:: https://coveralls.io/repos/github/iandennismiller/diamond-accounting/badge.svg?branch=master
-    :target: https://coveralls.io/github/iandennismiller/diamond-accounting?branch=master
+.. .. image:: https://coveralls.io/repos/github/iandennismiller/diamond-accounting/badge.svg?branch=master
+..     :target: https://coveralls.io/github/iandennismiller/diamond-accounting?branch=master
 
 Overview
 --------
